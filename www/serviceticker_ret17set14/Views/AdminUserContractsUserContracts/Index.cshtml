@@ -1,0 +1,66 @@
+﻿@model MzServiceTicker.DataViewModels.EnterpriseUserSelectorViewModel
+
+<script lang="javascript" type="text/javascript">
+    $(function () {
+        $('#EnterpriseDropDownList').change(function () {
+            var selectedValue = $(this).val();
+            var url = "./DropDown/GetUsersByEnterprise/";
+            $.ajax({
+                url: url,
+                data: { enterpriseId: selectedValue },
+                cache: false,
+                type: "POST",
+                success: function (data) {
+                    var markup = "<option value=null>--- Selecione um usuário ---</option>";
+                    for (var x = 0; x < data.length; x++) {
+                        markup += "<option value=" + data[x].Value + ">" + data[x].Text + "</option>";
+                    }
+                    $("#UserDropDownList").value = 0;
+                    $("#UserDropDownList").html(markup).show();
+                },
+                error: function (reponse) {
+                    alert("error : " + reponse);
+                }
+            });
+        });
+    });
+</script>
+
+
+<div class="col-md-12">
+
+    @if (Model.idSelectedEnterprise != null && Model.idSelectedUser != null)
+    {
+        @Html.ActionLink("Criar Novo", "Create", new { idSelectedEnterprise = Model.idSelectedEnterprise, idSelectedUser = Model.idSelectedUser }, new { @class = "btn btn-primary btn-xs pull-right" })
+    }
+
+    @using (Html.BeginForm("Index", "AdminUserContractsUserContracts", FormMethod.Post, new { @class = "form-inline" }))
+    {
+        <div class="form-group">
+            <label>@Html.Label(@MzCommon.MessageHandler.MessageGetter.GetMessage("Object.Enterprises"))</label>
+        </div>
+        
+        <div class="form-group">
+            @Html.DropDownListFor(model => model.idSelectedEnterprise, Model.Enterprises, new { id = "EnterpriseDropDownList", @class = "form-control input-sm" })
+        </div>
+        
+        <div class="form-group">
+            <label>@Html.Label(@MzCommon.MessageHandler.MessageGetter.GetMessage("Object.Users"))</label>
+        </div>
+        <div class="form-group">
+            @Html.DropDownListFor(model => model.idSelectedUser, Model.Users, new { id = "UserDropDownList", @class = "form-control input-sm" })
+        </div>
+
+        <input type="submit" value="Ver Contratos de Usuário" class="btn btn-primary btn-xs" />
+        
+        <br />
+        <br />
+        
+    }
+
+    @if (Model.idSelectedEnterprise != null && Model.idSelectedUser != null)
+    {
+        @Html.Action("IndexList", "AdminUserContractsUserContracts")
+    }
+
+</div>

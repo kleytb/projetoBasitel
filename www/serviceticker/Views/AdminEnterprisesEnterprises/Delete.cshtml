@@ -1,0 +1,72 @@
+﻿@model MzServiceTicker.DataViewModels.EnterpriseViewModel
+
+<div class="row">
+
+    <table class="table table-striped table-hover table-condensed">
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.Enterprise.EIN"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.EIN)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.Enterprise.Name"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Name)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.Enterprise.Description"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Description)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.Enterprise.Enabled"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Enabled)
+            </td>
+        </tr>
+
+        <tr>
+            <td class="col-md-5"></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <br />
+
+    <p>@Model.TrackingString</p>
+
+    <br />
+
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        @Html.AntiForgeryToken()
+        <div style="color: red">@Html.ValidationSummary()</div>
+        
+        @Html.ActionLink(MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.Return"), "Index", null, new { @class = "btn btn-primary" })
+        <input type='submit' value='@MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.ConfirmDelete")' class='btn btn-danger' />
+    }
+
+    <br />
+    <br />
+</div>
+
+
+
+
+
+
+

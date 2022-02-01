@@ -1,0 +1,146 @@
+﻿@model MzServiceTicker.DataViewModels.UserViewModel
+
+<div class="row">
+
+    <table class="table table-striped table-hover table-condensed">
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.Username"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Username)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.Name"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Name)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.Description"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Description)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.Email"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Email)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.PhoneNumber1"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.PhoneNumber1)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.PhoneNumber2"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.PhoneNumber2)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.IsAdmin"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.IsAdmin)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.IsTicketAdmin"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.IsTicketAdmin)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.IsTicketWorker"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.IsTicketWorker)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.LastLogon"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.LastLogon)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.LastPasswordChange"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.LastPasswordChange)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.PasswordExpired"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.PasswordExpired)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label(MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.Enabled"))
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Enabled)
+            </td>
+        </tr>
+
+        <tr>
+            <td class="col-md-5"></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <br />
+
+    <p>@Model.TrackingString</p>
+
+    <br />
+
+    @Html.ActionLink(MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.Return"), "Index", new { idSelectedEnterprise = Model.EnterpriseId }, new { @class = "btn btn-primary" })
+
+    <br />
+    <br />
+</div>
+
+
+
+
+
+
+

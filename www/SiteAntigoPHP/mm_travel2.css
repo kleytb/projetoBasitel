@@ -1,0 +1,156 @@
+/* Global Styles */
+
+body {
+	margin: 0px;
+	text-align: center;
+	}
+	
+td {
+	font: 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #003366;
+	text-align: left;
+	}
+	
+a {
+	color: #FF6600;
+	font-weight:bold;
+	}
+	
+a:hover {
+	color: #3366CC;
+	text-align: left;
+	}
+
+/* ID Styles */
+
+#navigation td {
+	border-bottom: 2px solid #C0DFFD;
+	font-size: 12px;
+	}
+	
+#navigation a {
+	font: 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #003366;
+	line-height:16px;
+	letter-spacing:.1em;
+	text-decoration: none;
+	display:block;
+	padding:8px 6px 10px 26px;
+	background: url("mm_arrow.gif") 14px 45% no-repeat;
+	}
+	
+#navigation a:hover {
+	background: #ffffff url("mm_arrow.gif") 14px 45% no-repeat;
+	color: #FF6600;
+	text-align: center;
+	}
+	
+#logo 	{
+	font: 24px Verdana, Arial, Helvetica, sans-serif;
+	color: #CCFF99;
+	letter-spacing: .2em;
+	line-height: 30px;
+	text-align: center;
+	font-weight: bold;
+	}
+
+#tagline 	{
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #FF9933;
+	letter-spacing: .4em;
+	line-height: 18px;
+	font-weight: bold;
+	text-align: center;
+	}
+
+#monthformat {
+	border-bottom: 2px solid #E6F3FF;
+		}
+		
+#dateformat {
+	font:11px Verdana, Arial, Helvetica, sans-serif;
+	color: #003366;
+	letter-spacing:.2em;
+	}
+	
+#dateformat a {
+	font:11px Verdana, Arial, Helvetica, sans-serif;
+	color: #003366;
+	font-weight:bold;
+	letter-spacing:.1em;
+	}
+	
+#dateformat a:hover {
+	color: #FF6600;
+	letter-spacing:.1em;
+	}
+	
+/* Class Styles */
+	
+.bodyText {
+	font:11px Verdana, Arial, Helvetica, sans-serif;
+	color:#003366;
+	line-height:20px;
+	margin-top:0px;
+	}
+	
+.pageName{
+	font: 18px Verdana, Arial, Helvetica, sans-serif;
+	color: #3366CC;
+	line-height: 24px;
+	letter-spacing: .2em;
+	text-align: center;
+	}
+	
+.subHeader {
+	font:bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #3366CC;
+	line-height:16px;
+	letter-spacing:.2em;
+	}
+
+.quote {
+	font: 20px Verdana, Arial, Helvetica, sans-serif;
+	color: #759DA1;
+	line-height:30px;
+	}
+	
+.smallText {
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #003366;
+	}
+	
+.navText {
+	font: 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #003366;
+	line-height:16px;
+	letter-spacing:.1em;
+	text-decoration: none;
+	}
+	
+#navigation {
+	text-align: left;
+}
+.Q {
+	font-weight: bold;
+}
+.QQ {
+	color: #FFFF33;
+}
+.QQ td {
+	font-weight: bold;
+	font-size: 12px;
+
+}
+.QQ {
+	font-size: 14px;
+}
+#form1 table tr td p {
+	text-align: right;
+}
+.style3 {
+	color: #FF0000;
+}
+.style3 .style3 {
+	color: #F00;
+}

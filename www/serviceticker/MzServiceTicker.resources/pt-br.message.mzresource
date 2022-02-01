@@ -1,0 +1,241 @@
+﻿//
+// Mezasoft Error Resource File
+// Language; Brazilian Portuguese
+// Language Code; pt-br
+// Application; MzAccuTicker
+// Version; 1.0.0
+//
+
+// General
+Screen.NoData; Não existem dados cadastrados para os filtros escolhidos.
+Screen.Edit; Editar
+Screen.Delete; Remover
+Screen.Save; Salvar
+Screen.Detail; Detalhar
+Screen.Return; Retornar
+Screen.Create; Criar Novo
+Screen.Action; Ação
+Screen.ChangePassword; Trocar Senha
+Screen.ConfirmDelete; CONFIRME A EXCLUSÃO DESTE REGISTRO
+
+// Landing page
+Screen.LandingPage.LoginInput; Usuário
+Screen.LandingPage.PasswordInput; Senha
+Screen.LandingPage.LoginButton; Entrar
+Screen.LandingPage.Phone; (c) 2012-2014 Mezasoft
+Screen.LandingPage.EMail; www.mezasoft.com
+
+// About page
+Screen.About.PageReturnButton; Retorna
+
+// InvalidSession page
+Screen.InvalidSession.Message; Sua sessão expirou. Por favor, faça o login novamente para acessar o sistema.
+
+// Exception page
+Screen.ExceptionError.Message; Um erro ocorreu no sistema. A equipe de suporte foi automaticamente notificada.  Por favor, faça o login novamente.
+Screen.ExceptionError.MessageDetails; Detalhes do erro:
+
+/// Home screen
+Screen.Home.ScreenName; Home
+Screen.Home.ScreenTitle; Ordens de Serviço
+
+
+/// Application Home screen
+Screen.AppHome.ActualEnterprise; Empresa
+Screen.AppHome.UserOptions; Opções do Usuário
+Screen.AppHome.UserChangePasswordOption; Alterar senha
+Screen.AppHome.UserAdministerOption; Administração do Sistema
+Screen.AppHome.UserLogoutOption; Logout
+Screen.AppHome.ShowMenu;Show Menu
+Screen.AppHome.DeletedData; O registro que você acabou de acessar não está mais disponível no sistema.Provavelmente foi apagado ou alterado por outro usuário.Por favor tente novamente a última operação.
+
+/// Contract
+Screen.Contract.Name; Contrato
+Screen.Contract.StartDateTime; Data/Hora Inicial
+Screen.Contract.EndDateTime; Data/Hora Final
+Screen.Contract.SubmitButton; Pesquisar
+Screen.Contract.ErrorGettingData; Erro buscando dados para o relatório. 
+Screen.Contract.TooManyRecords; Sua busca retornou um número muito grande de registros. Tente novamente em um intervalo de tempo mais curto.
+Screen.Contract.NoRecordsFound; Sua busca não encontrou registros no sistema. Tente novamente com diferentes parâmetros.
+Screen.Contract.ReportExport; Exportação de dados da tabela.\nPressione Ctrl+C e depois Enter.\nEm seguida abra o programa de sua preferência e pressione (CTRL+V) para salvar os dados.
+
+/// TrackPerAsset
+Screen.TrackPerAsset.Name; Ativo
+Screen.TrackPerAsset.StartDateTime; Data/Hora Inicial
+Screen.TrackPerAsset.EndDateTime; Data/Hora Final
+Screen.TrackPerAsset.SubmitButton; Pesquisar
+Screen.TrackPerAsset.ErrorGettingData; Erro buscando dados para o relatório. 
+Screen.TrackPerAsset.TooManyRecords; Sua busca retornou um número muito grande de registros. Tente novamente em um intervalo de tempo mais curto.
+Screen.TrackPerAsset.NoRecordsFound; Sua busca não encontrou registros no sistema. Tente novamente com diferentes parâmetros.
+Screen.TrackPerAsset.ReportExport; Exportação de dados da tabela.\nPressione Ctrl+C e depois Enter.\nEm seguida abra o programa de sua preferência e pressione (CTRL+V) para salvar os dados.
+
+/// TrackPerRfidTag
+Screen.TrackPerRfidTag.Name; Tag Rfid
+Screen.TrackPerRfidTag.StartDateTime; Data/Hora Inicial
+Screen.TrackPerRfidTag.EndDateTime; Data/Hora Final
+Screen.TrackPerRfidTag.SubmitButton; Pesquisar
+Screen.TrackPerRfidTag.ErrorGettingData; Erro buscando dados para o relatório. 
+Screen.TrackPerRfidTag.TooManyRecords; Sua busca retornou um número muito grande de registros. Tente novamente em um intervalo de tempo mais curto.
+Screen.TrackPerRfidTag.NoRecordsFound; Sua busca não encontrou registros no sistema. Tente novamente com diferentes parâmetros.
+Screen.TrackPerRfidTag.ReportExport; Exportação de dados da tabela.\nPressione Ctrl+C e depois Enter.\nEm seguida abra o programa de sua preferência e pressione (CTRL+V) para salvar os dados.
+
+/// Contract
+Screen.Contract.Visualize; Ver Contratos
+
+/// User
+Screen.User.Visualize; Ver Usuários
+
+/// Ticket
+Screen.Ticket.Visualize; Ver Ordens de Serviço
+
+///
+/// Reports
+///
+Report.Interval; Interval
+
+Report.TrackPerRfidCollPoint.Title; Relatório de Rastreamento por Antena
+Report.TrackPerRfidCollPoint.ReportItem; Antena
+
+Report.TrackPerRfidTag.Title; Relatório de Rastreamento por Número do Tag
+Report.RfidTagRead.RfidCollPoint; Tag
+
+Report.TrackPerTrackedAsset.Title; Relatório de Rastreamento por Ativo
+
+///
+/// Objects
+///
+Object.CreatedBy; Criado por
+Object.CreateDateTime; em
+Object.LastChangedBy; Última atualização por
+Object.LastChangeDateTime; em
+
+Object.Password.NotMatch; As senhas digitadas não são iguais.
+Object.NotNull; O campo não pode estar vazio.
+Object.MinLenght4; O campo deve ter no mínimo 4 caracteres.
+Object.MaxLenght32; O campo não deve ultrapassar os 32 caracteres.
+Object.MaxLenght256; O campo não deve ultrapassar os 256 caracteres.
+Object.MaxLenght512; O campo não deve ultrapassar os 512 caracteres.
+Object.MaxLenght4096; O campo não deve ultrapassar os 4096 caracteres.
+Object.MaxLenght4_32; O campo deve conter entre 4 e 32 caracters.
+Object.Between1And3; O campo deve estar entre 0 e 2
+Object.NeedChoice; Selecione uma opção válida.
+Object.ContainSpaces; Não pode conter espaços.
+Object.InvalidConnectionPort; Porta de conexão inválida (deve numero positivo diferente de zero).
+
+/// Enterprise
+Object.Enterprises; Empresas
+Object.Enterprises.Select; ---Selecione uma empresa---
+Object.Contracts; Contratos
+Object.Contracts.Select; ---Selecione um contrato---
+Object.Users; Usuários 
+Object.Users.Select; ---Selecione um usuário---
+
+Object.Enterprise.Id; Id
+Object.Enterprise.EIN; CNPJ
+Object.Enterprise.EIN.Placeholder; Entre com o CNPJ da empresa...
+Object.Enterprise.Name; Nome
+Object.Enterprise.Name.Placeholder; Entre com o nome da empresa...
+Object.Enterprise.Description; Descrição
+Object.Enterprise.Description.Placeholder; Entre com a descrição da empresa...
+Object.Enterprise.Enabled; Habilitado
+
+/// License 
+Object.License.EnterpriseEIN; CNPJ da Empresa
+Object.License.HostComputerHexFingerPrint; Identificador do Computador
+Object.License.NumLogicalProcessors; Número de Processadores
+Object.License.NumProcessorCores; Número de Núcleos
+Object.License.ModuleName; Nome do Módulo
+Object.License.FirstProductMajorVersion; Versão Principal Min do Produto
+Object.License.LastProductMajorVersion; Versão Principal Max do Produto
+Object.License.FirstProductMinorVersion; Versão Secundária Max do Produto
+Object.License.LastProductMinorVersion; Versão Secundária Min do Produto
+Object.License.MaxConcurrentUsers; Número Máximo de Usuários Concorrentes
+Object.License.ExpirationDate; Data de Expiração
+
+/// User
+Object.User.Id; Id
+Object.User.Username; Usuário
+Object.User.Username.Placeholder; Entre com o login do usuário...
+Object.User.Password; Senha
+Object.User.Password.Placeholder; Entre com a senha do usuário...
+Object.User.PasswordConfirmation; Confirme a Senha
+Object.User.PasswordConfirmation.Placeholder; Confirme a senha do usuário
+Object.User.Name; Nome
+Object.User.Name.Placeholder; Entre com o nome do usuário...
+Object.User.Description; Descrição
+Object.User.Description.Placeholder; Entre com a descrição do usuário...
+Object.User.Email; E-mail
+Object.User.Email.Placeholder; Entre com o e-mail do usuário...
+Object.User.PhoneNumber1; Telefone 1
+Object.User.PhoneNumber1.Placeholder; Entre com o telefone 1 do usuário...
+Object.User.PhoneNumber2; Telefone 2
+Object.User.PhoneNumber2.Placeholder; Entre com o telefone 2 do usuário...
+Object.User.IsAdmin; Administrador do Sistema
+Object.User.IsTicketAdmin; Administrador de OS
+Object.User.IsTicketWorker; Técnico em Campo
+Object.User.LastLogon; Último Logon
+Object.User.LastPasswordChange; Última Alteração de Senha
+Object.User.PasswordExpired; Senha Expirada
+Object.User.Enabled; Habilitado
+Object.User.EnterpriseId; Id da Empresa
+
+/// Contract
+Object.UserContract.Id; Id
+Object.UserContract.UserUsername; Nome do usuário
+Object.UserContract.ContractCode; Código do Contrato
+Object.UserContract.ContractName; Nome do Contrato
+Object.UserContract.LastReadDateTime; Data/Hora da Última Leitura
+Object.UserContract.LastKeepAliveDateTime; Data/Hora do Última Comunicação
+Object.UserContract.EnterpriseId; Id da Empresa
+
+
+/// Contract
+Object.Contract.Id; Id
+Object.Contract.Name; Nome
+Object.Contract.Name.Placeholder; Entre com o nome do contrato...
+Object.Contract.Description; Descrição
+Object.Contract.Description.Placeholder; Entre com a descrição do contrato...
+Object.Contract.Code; Código
+Object.Contract.Code.Placeholder; Entre com o código do contrato...
+Object.Contract.LastReadDateTime; Data/Hora da Última Leitura
+Object.Contract.LastKeepAliveDateTime; Data/Hora do Última Comunicação
+Object.Contract.EnterpriseId; Id da Empresa
+
+/// Ticket
+Object.Ticket.Id; Id
+Object.Ticket.Code; Ordem de Serviço
+Object.Ticket.Code.Placeholder; Entre com o código da OS...
+Object.Ticket.Priority; Prioridade
+Object.Ticket.Priority.Placeholder; Entre com a prioridade da OS (1 a 3)...
+Object.Ticket.CustomerBranch; Prefixo
+Object.Ticket.CustomerBranch.Placeholder; Entre com o prefixo da agência...
+Object.Ticket.CustomerBranchName; Agência
+Object.Ticket.CustomerBranchName.Placeholder; Entre com o nome da agência...
+Object.Ticket.TicketDescription; Descrição do Problema
+Object.Ticket.TicketDescription.Placeholder; Entre com a descrição da OS...
+Object.Ticket.TicketOpenDateTime; Data da Abertura 
+Object.Ticket.TicketOpenDateTime.Placeholder; Entre com a data da abertura da OS...
+Object.Ticket.TicketDueDateTime; Data de Previsão de Atendimento
+Object.Ticket.TicketDueDateTime.Placeholder; Entre com a data de previsão de atendimento da OS...
+Object.Ticket.ServiceStartDateTime; Data de Início do Serviço
+Object.Ticket.ServiceStartDateTime.Placeholder; Entre com a data do início do serviço...
+Object.Ticket.ServiceEndDateTime; Data de Fechamento da OS
+Object.Ticket.ServiceEndDateTime.Placeholder; Entre com a data de fechamento da OS...
+Object.Ticket.TicketComments; Comentários da OS
+Object.Ticket.TicketComments.Placeholder; Entre com os comentários da OS...
+Object.Ticket.ServiceComments; Comentários do Serviço
+Object.Ticket.ServiceComments.Placeholder; Entre com os comentários do serviço realizado...
+Object.Ticket.Status; Status
+Object.Ticket.Status.Placeholder; Entre com o status da OS...
+Object.Ticket.UserId; Usuário
+Object.Ticket.ContractId; Contrato
+Object.Ticket.ContractCode; Contrato
+
+/// Log
+Object.Log.Id; Id
+Object.Log.DateTime; Data/Hora
+Object.Log.LogType; Tipo
+Object.Log.Severity; Nível
+Object.Log.Source; Origem
+Object.Log.Username; Usuário
+Object.Log.Message; Mensagem

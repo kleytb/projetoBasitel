@@ -1,0 +1,63 @@
+//
+// Mezasoft Screen Navigation Resource File
+// Language; Brazilian Portuguese
+// Language Code; pt-br
+// Application; MzAccuTicker
+// Version; 1.0.0
+//
+
+// System screens
+System.Name; Sistema
+System.Tools.Name; Ferramentas do Sistema
+
+System.Tools.ChangePassword.Name; Alteração de Senha
+System.Tools.ChangePassword.Title; Alteração de Senha
+
+/// Modules
+User.Name; Usuário
+Admin.Name; Adminsitração do Sistema
+
+/// Groups
+Admin.Enterprises.Name; Empresas
+Admin.Users.Name; Usuários
+Admin.Logs.Name; Logs
+Admin.Contracts.Name; Contratos
+Admin.UserContracts.Name; Contrato de Usuário
+
+User.Ticket.Name; Ordem de Serviço
+User.TicketAdmin.Name; Administrar Ordens de Serviço
+User.User.Name; Técnico
+User.Contract.Name; Contrato
+User.Status.Name; Situação
+
+/// Screens
+Admin.Enterprises.Enterprises.Name; Empresas
+Admin.Enterprises.Enterprises.Title; Empresas
+Admin.Enterprises.Licenses.Name; Licenças
+Admin.Enterprises.Licenses.Title; Licenças
+Admin.Users.Users.Name; Usuários
+Admin.Users.Users.Title; Usuários
+Admin.Logs.SystemLogs.Name; Logs 
+Admin.Logs.SystemLogs.Title; Logs do Sistema
+Admin.Logs.AuditLogs.Name; Logs 
+Admin.Logs.AuditLogs.Title; Logs de Auditoria
+Admin.Logs.LoginHistory.Name; Histórico de Login
+Admin.Logs.LoginHistory.Title; Histórico de Login
+Admin.Contracts.Contracts.Name; Contratos
+Admin.Contracts.Contracts.Title; Contratos
+Admin.UserContracts.UserContracts.Name; Contratos de Usuário
+Admin.UserContracts.UserContracts.Title; Contratos de Usuário
+
+User.TicketAdmin.Ticket.Name; Administrar Ordens de Serviço
+User.TicketAdmin.Ticket.Title; Administrar Ordens de Serviço
+User.Ticket.Ticket.Name; Ordens de Serviço Abertas
+User.Ticket.Ticket.Title; Ordens de Serviço Abertas
+User.Ticket.TicketReport.Name; Relatório de Ordens de Serviço
+User.Ticket.TicketReport.Title; Relatório de Ordens de Serviço
+User.User.User.Name; Técnicos
+User.User.User.Title; Técnicos
+User.Contract.Contract.Name; Contratos
+User.Contract.Contract.Title; Contratos
+User.Status.Status.Name; Situação
+User.Status.Status.Title; Situação
+

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<MzServiceTicker.DataViewModels.EnterpriseViewModel>
+
+<div class="row">
+
+    @if (Model.Count() == 0)
+    {
+        <p>@MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.NoData")</p>
+    }
+    else
+    {
+        WebGrid grid = new WebGrid(source: Model, rowsPerPage: 25, canPage: true, canSort: true, defaultSort: "Name");
+    
+        @grid.Pager()
+
+        @grid.GetHtml(tableStyle: "table table-striped table-bordered table-hover",
+        columns: grid.Columns(
+            grid.Column("Name", @MzCommon.MessageHandler.MessageGetter.GetMessage("Object.Enterprise.Name"), canSort: true),
+            grid.Column("EIN", @MzCommon.MessageHandler.MessageGetter.GetMessage("Object.Enterprise.EIN"), canSort: true),
+            grid.Column("Description", @MzCommon.MessageHandler.MessageGetter.GetMessage("Object.Enterprise.Description"), canSort: true),
+            grid.Column("Enabled", @MzCommon.MessageHandler.MessageGetter.GetMessage("Object.User.Enabled"), canSort: true, format: item => item.Enabled ?
+                            Html.Raw("<img src='Content/image/mz.icon.ok.jpg'/>") :
+                            Html.Raw("<img src='Content/image/mz.icon.notok.jpg'/>"))
+        ))
+
+        <div class="pagination pagination-small pagination-right">
+            @grid.Pager(mode: WebGridPagerModes.All)
+        </div>
+    }
+
+
+</div>

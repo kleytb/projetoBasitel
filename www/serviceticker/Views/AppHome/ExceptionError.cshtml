@@ -1,0 +1,33 @@
+﻿@model MzServiceTicker.ViewModels.ExceptionViewModel
+
+<div class="col-md-12">
+
+    <br />
+
+    <div class="col-md-5">
+        <img src='@Url.Content("~/Content/image/mz.webtrackerlogo.jpg")' />
+    </div>
+
+    <div class="col-md-7">
+        <h3 id="LandingPagePhrase">@MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.LandingPage.Phrase")</h3>
+    </div>
+</div>
+
+
+<div class="col-md-12">
+    <br />
+
+    <div class="alert alert-danger">
+        <p>Ops!</p>
+        <p>@MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.Exception.Message")</p>
+        <br />
+    </div>
+
+    <br />
+    <p>@MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.Exception.MessageDetails")</p>
+    <p>@Model.ExceptionMessage</p>
+
+    <button type="submit" class="btn btn-primary" onclick="window.location.href='@Url.Action("Index", "Home")'">@MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.Home.ScreenTitle")</button>
+
+</div>
+

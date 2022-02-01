@@ -1,0 +1,45 @@
+﻿@model MzServiceTicker.ViewModels.HeaderViewModel
+
+<div class="col-md-12">
+
+    <br />
+
+    <div class="col-md-3">
+        <img src='@Url.Content("~/Content/image/mz.logo.serviceticker.jpg")' />
+    </div>
+
+    <div class="col-md-2">
+        <img src='@Url.Content("~/Content/image/mz.logo.basitel.jpg")' />
+    </div>
+
+    <div class="col-md-3">
+        <h5 title='@MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.AppHome.ActualEnterprise")'>
+            <span class="label label-default">
+                @Model.EnterpriseName
+            </span>
+        </h5>
+    </div>
+
+    <div class="col-md-4">
+        <h5></h5>
+
+        <span class="glyphicon glyphicon-user"></span>
+        @Model.Username
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle btn-xs" title=@MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.AppHome.UserOptions"), data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href='@Url.Action("ChangePassword", "AppHome")'>@MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.AppHome.UserChangePasswordOption")</a></li>
+                <li class="divider"></li>
+                @if (Model.IsAdminSession)
+                {
+                    <li><a href='@Url.Action("ChangeCurrentModule", "AppHome", new { moduleKey = "Admin" })'>@MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.AppHome.UserAdministerOption")</a></li>
+                    <li class="divider"></li>
+                }
+                <li><a href='@Url.Action("Logout", "AppHome")'>@MzCommon.MessageHandler.MessageGetter.GetMessage("Screen.AppHome.UserLogoutOption")</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
